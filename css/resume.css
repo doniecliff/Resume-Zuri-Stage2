@@ -1,0 +1,310 @@
+ul, summary  {
+    list-style: none;}
+a {text-decoration: none;}
+body {
+background-color: white;}/* #D7D7D7 */
+*, html, body {
+    padding: 0; margin: 0;  /* rm all (default) padding & margin on all elements/tags */
+}
+
+/* \_________^normaliz^__________/ */
+
+
+
+.wrap {
+    /* background-color: antiquewhite; */
+    display: flex;
+}
+
+/* --------mainB */
+.mainBody {
+    /* background-color: white; */
+    flex: 9;
+    overflow: hidden;
+    border-right: 0.5em solid #192734;
+}
+li {
+    /* background-color: orange; */
+    display: inline-flex;
+}
+
+/* remember layering-design z-index */
+.transformIt {
+     background-color: #192734;
+     position: relative; right: -0em; top: -10em;
+     border-radius: 0.3em;
+
+     width: 67em; height: 12em;
+     /* margin: 0 0 -1em 30em; */
+     transform: rotate(11deg);
+     z-index: -1;
+     display: inline-flex;
+}
+
+
+/* -----header */
+header{
+    /* background-color: #444;/ */
+    display: flex;
+}#fitLogo1{
+    /* background-color: brown; */
+    flex: 4;
+}#fitLogo2 {
+    /* background-color: cornflowerblue; */
+    width: 4em; height: 4em;
+}
+#fitLogo2 img {
+    /* background-color: chartreuse; */
+    max-width: 100%;
+}
+header nav {
+    /* background-color: chartreuse; */
+    flex: 8;
+    text-align:right;
+    margin: 0 1em 0 0;
+}header nav li {
+    margin-left: 3em;
+}
+header nav .navIcons {
+    /* background-color: #777; */
+    width: 1.5em; height: 1.5em;
+    position: relative; bottom: -0.5em; left: 0.2em;
+    display: inline-flex;
+}.navIcons img {
+    max-width: 100%;
+}header nav a {
+    color: white;
+    font-weight: 500;
+}nav li:last-of-type #bx {
+    /* text-align: center; */
+    padding: 0.1em  0.5em 1.9em;
+
+    border-radius: 0.5em;
+    height: 0.5em;
+    position: relative; bottom: -0.9em;
+    background-color: white;
+}nav li:last-of-type a {
+    color: black;
+}
+
+
+
+/* landingpage------  */
+.mainBody .flexP_img {
+    /* background-color: rgb(230, 211, 127); */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: normal;
+    display: flex; 
+    
+    border-bottom: 0.4em solid #192734;
+}.flexP_img .para {
+    flex: 8;
+}
+.flexP_img .authorsImg {
+    /* background-color: yellow; */
+    flex: 4;
+    margin: 0 0 -0.1em 0;
+    overflow: hidden;
+}.authorsImg .fitAI {  
+    width: 20em;
+    /* background-color: blue; */
+    position: relative; bottom: -4em; right: 0em; 
+}.fitAI img {
+    max-width: 100%;
+    position: relative; bottom: -1.4em; right: -0.3em;
+}
+.para {
+    margin: -5em 0 0 0 ;
+    padding: 0 0 0 3em;
+}
+.para p:first-of-type {
+    margin: 0 0 3em 0;
+    font-size: 2em;
+    font-weight: 200;
+}.para p:nth-of-type(2) {
+    font-size: 3.5em;
+    display: inline-flex;
+    /* margin: 0 0 3em 0; */
+}#emp{
+    display: inline-flex;
+    position: relative; bottom: -0.9em; left: 0.02em;
+}#myInitials{
+    font-style: italic;
+    font-weight: 200;
+    font-size: 0.99em;
+    color: #ffffff;
+    background-color: #192734;
+    
+    letter-spacing: 0.5em;
+    padding: 0 0.8rem;
+    text-align: center;
+    border: 0.15em solid #909090;
+    border-radius: 0.4em;
+
+    transform: rotate(10deg);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}.para p:nth-of-type(4) {
+    font-size: 1.5em;
+    color: #909090;
+    margin-top: 0.9em;
+}
+
+.socialMediaIcons {
+    margin: 7em 0 3em 0em;
+}.socialMediaIcons li{
+    border: 0;
+}.socialMediaIcons .fitImg {
+    /* background-color: yellow; */
+    width: 2.3em; height: 2.3em;
+    margin: 0 0 0 0.5em;
+    display: inline-flex;
+    
+
+}.fitImg img {
+    padding: 10%;
+    background-color: white;
+    border-radius: 0.34em;
+    box-shadow: 0 0.4em 0.4em rgba(0, 0, 0, 0.5);
+    max-width: 100%;
+}
+
+
+main {
+    background-color: burlywood;
+}
+
+
+
+
+/* --------footer */
+
+
+footer {
+    background-color: #192734;
+    padding: 70px 0 50px 120px;
+    margin: 170px 0 0;
+    color: white;
+    display: flex;
+ }
+.address {
+    flex: 1;
+}
+.address .hLogo p:first-of-type {
+    margin: 0; padding: 0; line-height: 30px;
+    font-family: Adobe Garamond Pro;
+    font-size: 25px; font-weight: bold;
+
+    letter-spacing: 0.15em;
+}.address .hLogo p:last-child{
+    margin: 0 0 0 23px;
+    font-family: Adobe Garamond Pro;
+    font-weight: bold; font-size: 9px;
+    /* line-height: 11px; */
+    letter-spacing: 0.6em;
+}.address address {
+    margin: 30px 0 0 0;
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.fLink {
+    flex: 1;
+}
+.fLink a {
+    color: white;
+    font-family: Montserrat;
+    font-size: 18px;    
+}.fLink li {
+    /* background-color: aquamarine; */
+    line-height: 40px;
+}
+
+.socials {
+    flex: 1;
+}
+.socials a {
+    display: inline-flex;
+    color: inherit;
+}.socials p{
+    display: inline-flex;
+    font-family: Montserrat;
+    font-size: 16px;
+    line-height: 42px;
+    margin-left: 20px;}
+.socials .icon {
+    background-color: #192734;
+    padding: 0 1em;
+    width: 2rem; height: 2em;
+}.socials .icon img {
+    max-width: 100%;
+}
+
+.subscribe {
+    flex: 1;
+}
+.subscribe p{
+        font-family: Montserrat;
+        font-size: 16px;
+        line-height: 20px;
+        /* color: inherit; */
+        margin: 0 0 30px 0;
+}
+.subscribe input {
+    background-color: inherit;
+    /* place */
+    border: 2px solid hsla(117, 20%, 40%);
+    border-radius: 3px;
+    padding: 5px 15px;
+    margin: 5px 0 0 -5px;
+}.subscribe button {
+    font-family: Montserrat;
+    font-size: 16px;
+    line-height: 20px;
+    color: #14274A;
+
+    background-color: hsla(117, 20%, 40%);/*E0B973*/
+    border: 0;
+    border-radius: 3px;
+    padding: 9px; margin: 0 0 0 -6.91px;
+    height: 39px; width: 60px;
+}
+
+
+
+
+
+
+
+/* ---------aside */
+
+aside {
+    /* background-color: darkorange; */
+    flex: 3;
+    border-left: 0.5em solid hsla(117, 20%, 40%, 0.726);
+}
+aside section {
+    margin: 2em 0 0 0;
+    padding-left: 2em;
+}
+section #emp2 {
+    color: red;
+    font-weight: 1000;
+    font-size: 2em;
+}
+
+
+
+
+
+/* ? */
+/* how position(with; top...) property works flexibly when building
+ a responsive site */
+ /* how autosave affect Js */
+
+
+
+ /*(me) these terms will help what to learn,
+  what your learn towards at certain topics :- */
+ /* post and get requests& Rendering,
+  dynamic, funtional, interactive, graphics, responsive design */
