@@ -3,5 +3,5 @@
 
 ### Stage 3 ~Task
 
-push resune with (me)js code to gitHub
+push resume with (me)js code to gitHub
 host on Netlify git@github.com:doniecliff/Resume-Zuri-Stage2.git
